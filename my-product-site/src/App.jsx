@@ -2,7 +2,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
@@ -33,7 +33,7 @@ function App() {
         <AnimatedRoutes />
       </main>
       <Navbar />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
