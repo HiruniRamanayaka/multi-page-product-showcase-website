@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.logo-side {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+  height: 100px;
+}
+
+.company {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  background: linear-gradient(90deg, #00ffff, #47849e);
+
+  /* Standard and vendor-prefixed background-clip */
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  /* Standard and vendor-prefixed text fill */
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 0;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #1fbdc8;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
