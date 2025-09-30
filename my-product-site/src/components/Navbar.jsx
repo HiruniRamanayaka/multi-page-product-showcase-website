@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { MdHome, MdPhotoLibrary } from 'react-icons/md';
 import { RiInformationLine } from 'react-icons/ri';
 import { TbPackages } from 'react-icons/tb';
@@ -11,29 +11,39 @@ const Navbar = () => {
     <nav className="navbar">
       <ul>
         <li>
-          <Link to="/" title="Home">
+          <NavLink to="/" title="Home" 
+            className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'}
+          >
             <MdHome />
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/about" title="About">
+          <NavLink to="/about" title="About"
+            className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'}
+          >
             <RiInformationLine />
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/products" title="Products">
+          <NavLink to="/products" title="Products"
+            className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'}
+          >
             <TbPackages />
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/gallery" title="Gallery">
+          <NavLink to="/gallery" title="Gallery"
+            className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'}
+          >
             <MdPhotoLibrary />
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/contact" title="Contact">
+          <NavLink to="/contact" title="Contact"
+            className={({ isActive }) => isActive ? 'nav-icon active' : 'nav-icon'}
+          >
             <HiOutlinePhone />
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
