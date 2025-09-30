@@ -61,3 +61,35 @@
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
 }
+
+@media (max-width: 768px) {
+  .page.home {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .left-side,
+  .right-side {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .left-side h2 {
+    font-size: 2rem;
+  }
+
+  .left-side p {
+    font-size: 1rem;
+  }
+
+  .button-group {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .right-side > * {
+    width: 100%;
+    max-width: 400px;
+  }
+}
