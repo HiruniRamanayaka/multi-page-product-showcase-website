@@ -1,0 +1,91 @@
+.page.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+.contact-left {
+  flex: 1;
+  max-width: 50%;
+  margin-left: 5%;
+  margin-top: 0;
+}
+
+.contact-left h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+  background: linear-gradient(90deg, #00ffff, #47849e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #ccc;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.contact-icon {
+  color: #00ffff;
+  font-size: 1.5rem;
+}
+
+.contact-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-lottie {
+  width: 350px;
+  max-width: 100%;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.3));
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@media (max-width: 768px) {
+  .page.contact {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-left,
+  .contact-right {
+    max-width: 100%;
+  }
+
+  .contact-lottie {
+    width: 280px;
+  }
+}
