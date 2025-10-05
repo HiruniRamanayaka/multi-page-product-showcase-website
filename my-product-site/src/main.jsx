@@ -6,7 +6,7 @@ import "./index.css";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/multi-page-product-showcase-website">
       <App />
     </BrowserRouter>
   </StrictMode>,
